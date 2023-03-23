@@ -43,8 +43,9 @@ return require('packer').startup(function(use)
   -- Allows further functionality to ts server such as renaming a file and updating imports.
   use 'jose-elias-alvarez/typescript.nvim'
 
-  -- Allows LSP servers to appear in auto completion
---  use 'hrsh7th/cmp-nvim-lsp'
+  -- Allows LSP servers to appear in auto completion.
+  -- Breaks Neovim when attempting to go into insert mode.
+  -- use 'hrsh7th/cmp-nvim-lsp'
 
   -- Add enhance UIs to LSP experience.
 use({
