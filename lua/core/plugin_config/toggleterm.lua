@@ -8,7 +8,7 @@ end
 toggleterm.setup({
   open_mapping = [[<c-`>]],
   size = 10,
-  start_in_insert = true,
+  start_in_insert = false,
 })
 
 
