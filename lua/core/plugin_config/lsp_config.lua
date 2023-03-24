@@ -1,6 +1,6 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = {  'tsserver', 'html', 'cssls'}
+  ensure_installed = {'tsserver', 'html', 'cssls'}
 })
 
 local on_attach = function(_, _)
@@ -18,6 +18,7 @@ end
 
 
 require('lspconfig').lua_ls.setup {
+  on_attach = on_attach,
    settings = {
         Lua = {
             diagnostics = {

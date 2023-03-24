@@ -29,16 +29,16 @@ return require('packer').startup(function(use)
     requires = {{ 'nvim-lua/plenary.nvim' }}
   }
 
-  use {
-  -- Installs language servers.
-    'williamboman/mason.nvim',
-
-    -- Bridges gap between Mason and nvim-lsp.
-    'williamboman/mason-lspconfig.nvim',
-
-    -- Configures lsp servers.
-    'neovim/nvim-lspconfig',
-  }
+--  use {
+--  -- Installs language servers.
+--    'williamboman/mason.nvim',
+--
+--    -- Bridges gap between Mason and nvim-lsp.
+--    'williamboman/mason-lspconfig.nvim',
+--
+--    -- Configures lsp servers.
+--    'neovim/nvim-lspconfig',
+--  }
 
   -- Allows further functionality to ts server such as renaming a file and updating imports.
   use 'jose-elias-alvarez/typescript.nvim'
@@ -48,18 +48,18 @@ return require('packer').startup(function(use)
   -- use 'hrsh7th/cmp-nvim-lsp'
 
   -- Add enhance UIs to LSP experience.
-use({
-    "glepnir/lspsaga.nvim",
-    branch = "main",
-    config = function()
-        require("lspsaga").setup({})
-    end,
-    requires = {
-        {"nvim-tree/nvim-web-devicons"},
-        --Please make sure you install markdown and markdown_inline parser
-        {"nvim-treesitter/nvim-treesitter"}
-    }
-})
+--use({
+--    "glepnir/lspsaga.nvim",
+--    branch = "main",
+--    config = function()
+--        require("lspsaga").setup({})
+--    end,
+--    requires = {
+--        {"nvim-tree/nvim-web-devicons"},
+--        --Please make sure you install markdown and markdown_inline parser
+--        {"nvim-treesitter/nvim-treesitter"}
+--    }
+--})
   -- Add VSCode-like icons to auto completion window.
   use 'onsails/lspkind.nvim'
 
