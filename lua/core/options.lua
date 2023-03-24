@@ -19,5 +19,4 @@ o.ai = true --Auto Indent
 o.si = true --Smart Indent
 o.path:append { '**' } --Go into subdirs on search.
 o.termguicolors = true
-
 o.clipboard = 'unnamedplus'

@@ -12,8 +12,12 @@ end
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
+
   use 'wbthomason/packer.nvim'
+
   use 'ellisonleao/gruvbox.nvim'
+
+  use 'akinsho/toggleterm.nvim'
 
   -- File explorer
   use 'nvim-tree/nvim-tree.lua'
@@ -41,7 +45,7 @@ return require('packer').startup(function(use)
 --  }
 
   -- Allows further functionality to ts server such as renaming a file and updating imports.
-  use 'jose-elias-alvarez/typescript.nvim'
+--  use 'jose-elias-alvarez/typescript.nvim'
 
   -- Allows LSP servers to appear in auto completion.
   -- Breaks Neovim when attempting to go into insert mode.
@@ -61,13 +65,9 @@ return require('packer').startup(function(use)
 --    }
 --})
   -- Add VSCode-like icons to auto completion window.
-  use 'onsails/lspkind.nvim'
+ -- use 'onsails/lspkind.nvim'
 
-  use 'akinsho/toggleterm.nvim'
 
-  -- My plugins here 
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
