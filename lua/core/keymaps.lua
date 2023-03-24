@@ -18,15 +18,16 @@ vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
 -- Set terminal to normal mode. Do this prior to attempting to split terminal.
 vim.keymap.set('t', '<C-e>', '<C-\\><C-n>')
-
--- Splt Terminal horizontally 
+--
+---- Splt Terminal horizontally 
 vim.keymap.set('n', 'sth', ':split<Return><C-w>w :terminal <CR>')
-
--- Split Terminal vertically 
+--
+---- Split Terminal vertically 
 vim.keymap.set('n', 'stv', ':vsplit<Return><C-w>w :terminal <CR>')
+--
+---- End terminal session and close terminal.
+-- This seems to cause Neovim to lag.
+--vim.keymap.set('n', 'kt', ':bd!<CR>')
 
--- End terminal session and close terminal.
-vim.keymap.set('n', 'kt', ':bd!<CR>')
-
--- Toggle to buffer
+---- Toggle to buffer
 vim.keymap.set('n', 'tt', '<C-w>w')
