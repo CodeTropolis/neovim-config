@@ -26,8 +26,7 @@ vim.keymap.set('n', 'sth', ':split<Return><C-w>w :terminal <CR>')
 vim.keymap.set('n', 'stv', ':vsplit<Return><C-w>w :terminal <CR>')
 --
 ---- End terminal session and close terminal.
--- This seems to cause Neovim to lag.
---vim.keymap.set('n', 'kt', ':bd!<CR>')
+vim.keymap.set('n', '<leader>kt', ':bd!<CR>')
 
 ---- Toggle to buffer
 vim.keymap.set('n', 'tt', '<C-w>w')
