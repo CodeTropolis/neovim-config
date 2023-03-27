@@ -4,7 +4,7 @@ vim.gloaded_netrwPlugin = 1
 require('nvim-tree').setup({
   view = {
   side = "left",
-  width = 35,
+  width = 30,
   },
 })
 

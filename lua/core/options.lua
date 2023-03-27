@@ -1,5 +1,4 @@
 o = vim.opt
-
 o.backup = false
 o.fileencoding = 'utf-8'
 o.relativenumber = true
