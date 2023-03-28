@@ -16,7 +16,8 @@ vim.keymap.set('n', 'ct', ':tabc <CR>')
 -- Split window
 vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
--- Set terminal to normal mode. Do this prior to attempting to split terminal.
+-- Set terminal to normal mode. 
+-- Do this prior to attempting to split terminal.
 vim.keymap.set('t', '<C-e>', '<C-\\><C-n>')
 --
 ---- Splt Terminal horizontally 
@@ -28,5 +29,7 @@ vim.keymap.set('n', 'stv', ':vsplit<Return><C-w>w :terminal <CR>')
 ---- End terminal session and close terminal.
 vim.keymap.set('n', '<leader>kt', ':bd!<CR>')
 
----- Toggle to buffer
+---- Toggle to another buffer, Terminals, and Nvim-Tree.
 vim.keymap.set('n', 'tt', '<C-w>w')
+
+
