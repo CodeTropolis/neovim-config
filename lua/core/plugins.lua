@@ -33,16 +33,16 @@ return require('packer').startup(function(use)
    requires = {{ 'nvim-lua/plenary.nvim', 'BurntSushi/ripgrep' }}
  }
 
---  use {
+  use {
 --  -- Installs language servers.
---    'williamboman/mason.nvim',
+    'williamboman/mason.nvim',
 --
 --    -- Bridges gap between Mason and nvim-lsp.
---    'williamboman/mason-lspconfig.nvim',
+    'williamboman/mason-lspconfig.nvim',
 --
 --    -- Configures lsp servers.
---    'neovim/nvim-lspconfig',
---  }
+    'neovim/nvim-lspconfig',
+  }
 
   -- Allows further functionality to ts server such as renaming a file and updating imports.
 --  use 'jose-elias-alvarez/typescript.nvim'

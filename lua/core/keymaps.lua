@@ -7,9 +7,9 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- New tab
-vim.keymap.set('n', 'nt', ':tabedit <CR>')
+vim.keymap.set('n', 'nt', ':tabedit<CR>')
 -- Close current tab
-vim.keymap.set('n', 'ct', ':tabc <CR>')
+vim.keymap.set('n', 'ct', ':tabc<CR>')
 -- Move to next tab: gt
 -- Move to prev. tab gT
 
@@ -30,6 +30,12 @@ vim.keymap.set('n', 'stv', ':vsplit<Return><C-w>w :terminal <CR>')
 vim.keymap.set('n', '<leader>kt', ':bd!<CR>')
 
 ---- Toggle to another buffer, Terminals, and Nvim-Tree.
-vim.keymap.set('n', 'tt', '<C-w>w')
+--vim.keymap.set('n', 'tt', '<C-w>w')
+
+-- Move cursor to split on right.
+vim.keymap.set('n', 'br', '<C-w><right>')
+
+-- Move cursor to split on left.
+vim.keymap.set('n', 'bl', '<C-w><left>')
 
 
