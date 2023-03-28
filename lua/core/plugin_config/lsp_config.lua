@@ -1,11 +1,10 @@
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { 'lua_ls', 'tsserver', 'html', 'cssls' }
+  ensure_installed = { 'lua_ls', 'tsserver', 'angularls', 'html', 'cssls' }
 })
 
 local on_attach = function(client, bufnr)
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
-
   vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, bufopts)
   vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)

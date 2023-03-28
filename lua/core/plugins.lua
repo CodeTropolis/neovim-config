@@ -15,7 +15,7 @@ return require('packer').startup(function(use)
 
   use 'wbthomason/packer.nvim'
 
-  use 'EdenEast/nightfox.nvim' 
+  use 'EdenEast/nightfox.nvim'
 
   use 'akinsho/toggleterm.nvim'
 
@@ -66,8 +66,6 @@ use({
 })
   -- Add VSCode-like icons to auto completion window.
  use 'onsails/lspkind.nvim'
-
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
