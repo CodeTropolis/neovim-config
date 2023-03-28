@@ -39,9 +39,9 @@ vim.keymap.set('n', 'br', '<C-w><right>')
 vim.keymap.set('n', 'bl', '<C-w><left>')
 
 -- Move cursor to split above.
-vim.keymap.set('n', 'bt', '<C-w><up>')
+vim.keymap.set('n', 'bu', '<C-w><up>')
 
 -- Move cursor to split below.
-vim.keymap.set('n', 'bd', '<C-w><down>')
+vim.keymap.set('n', 'bb', '<C-w><down>')
 
 
