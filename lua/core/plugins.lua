@@ -25,7 +25,7 @@ return require('packer').startup(function(use)
 
   use 'nvim-lualine/lualine.nvim'
 
-  --use 'nvim-treesitter/nvim-treesitter'
+  use 'nvim-treesitter/nvim-treesitter'
 
  use {
    'nvim-telescope/telescope.nvim',
@@ -45,11 +45,11 @@ return require('packer').startup(function(use)
   }
 
   -- Allows further functionality to ts server such as renaming a file and updating imports.
---  use 'jose-elias-alvarez/typescript.nvim'
+  use 'jose-elias-alvarez/typescript.nvim'
 
   -- Allows LSP servers to appear in auto completion.
   -- Breaks Neovim when attempting to go into insert mode.
-  -- use 'hrsh7th/cmp-nvim-lsp'
+--  use 'hrsh7th/cmp-nvim-lsp'
 
   -- Add enhance UIs to LSP experience.
 --use({
@@ -65,7 +65,7 @@ return require('packer').startup(function(use)
 --    }
 --})
   -- Add VSCode-like icons to auto completion window.
- -- use 'onsails/lspkind.nvim'
+ use 'onsails/lspkind.nvim'
 
 
 
