@@ -52,18 +52,18 @@ return require('packer').startup(function(use)
 --  use 'hrsh7th/cmp-nvim-lsp'
 
   -- Add enhance UIs to LSP experience.
---use({
---    "glepnir/lspsaga.nvim",
---    branch = "main",
---    config = function()
---        require("lspsaga").setup({})
---    end,
---    requires = {
---        {"nvim-tree/nvim-web-devicons"},
---        --Please make sure you install markdown and markdown_inline parser
---        {"nvim-treesitter/nvim-treesitter"}
---    }
---})
+use({
+    "glepnir/lspsaga.nvim",
+    branch = "main",
+    config = function()
+        require("lspsaga").setup({})
+    end,
+    requires = {
+        {"nvim-tree/nvim-web-devicons"},
+        --Please make sure you install markdown and markdown_inline parser
+        {"nvim-treesitter/nvim-treesitter"}
+    }
+})
   -- Add VSCode-like icons to auto completion window.
  use 'onsails/lspkind.nvim'
 
