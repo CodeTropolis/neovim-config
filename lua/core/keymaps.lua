@@ -33,7 +33,7 @@ vim.keymap.set('n', '<leader>kt', ':bd!<CR>')
 --vim.keymap.set('n', 'tt', '<C-w>w')
 
 -- Move cursor to split on right.
-vim.keymap.set('n', '<leader>n', '<C-w><right>')
+vim.keymap.set('n', '<leader>m', '<C-w><right>')
 
 -- Move cursor to split on left.
 vim.keymap.set('n', '<leader>p', '<C-w><left>')
