@@ -33,15 +33,15 @@ vim.keymap.set('n', '<leader>kt', ':bd!<CR>')
 --vim.keymap.set('n', 'tt', '<C-w>w')
 
 -- Move cursor to split on right.
-vim.keymap.set('n', 'br', '<C-w><right>')
+vim.keymap.set('n', '<leader>n', '<C-w><right>')
 
 -- Move cursor to split on left.
-vim.keymap.set('n', 'bl', '<C-w><left>')
+vim.keymap.set('n', '<leader>p', '<C-w><left>')
 
 -- Move cursor to split above.
-vim.keymap.set('n', 'bu', '<C-w><up>')
+vim.keymap.set('n', '<leader>u', '<C-w><up>')
 
 -- Move cursor to split below.
-vim.keymap.set('n', 'bb', '<C-w><down>')
+vim.keymap.set('n', '<leader>b', '<C-w><down>')
 
 

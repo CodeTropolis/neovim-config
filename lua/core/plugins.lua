@@ -48,8 +48,11 @@ return require('packer').startup(function(use)
   use 'jose-elias-alvarez/typescript.nvim'
 
   -- Allows LSP servers to appear in auto completion.
-  -- Breaks Neovim when attempting to go into insert mode.
---  use 'hrsh7th/cmp-nvim-lsp'
+  -- hrsh7th/cmp-nvim-lsp broke Neovim when attempting to go into insert mode.
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/nvim-cmp'
+
 
   -- Add enhance UIs to LSP experience.
 use({
