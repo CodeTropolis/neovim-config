@@ -48,10 +48,11 @@ return require('packer').startup(function(use)
 
   -- Allows LSP servers to appear in auto completion.
   -- hrsh7th/cmp-nvim-lsp broke Neovim when attempting to go into insert mode.
+  -- This plugin broke Neovim when attempting to use alone. 
+  -- Once the other hrsh7th plugins are used, the issue goes away.
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/nvim-cmp'
-
 
   -- Add enhance UIs to LSP experience.
   use({
