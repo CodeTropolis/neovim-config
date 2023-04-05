@@ -19,8 +19,9 @@ vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
 -- Set terminal to normal mode. 
 -- Do this prior to attempting to split terminal.
---vim.keymap.set('t', '<C-e>', '<C-\\><C-n>')
-vim.keymap.set('t', '<leader>e', '<C-\\><C-n>')
+vim.keymap.set('t', '<C-e>', '<C-\\><C-n>')
+-- The below keymap caused terminal to be sluggish when typing commands.
+--vim.keymap.set('t', '<leader>e', '<C-\\><C-n>')
 
 ---- Splt Terminal horizontally 
 vim.keymap.set('n', 'sth', ':split<Return><C-w>w :terminal <CR>')
