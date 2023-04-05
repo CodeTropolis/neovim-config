@@ -72,6 +72,9 @@ return require('packer').startup(function(use)
 
   use("saadparwaiz1/cmp_luasnip") --> Snippets source for nvim-cmp
   use("L3MON4D3/LuaSnip")         --> Snippets plugin
+
+  use 'lewis6991/gitsigns.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
