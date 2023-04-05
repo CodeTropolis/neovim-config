@@ -48,7 +48,7 @@ return require('packer').startup(function(use)
 
   -- Allows LSP servers to appear in auto completion.
   -- hrsh7th/cmp-nvim-lsp broke Neovim when attempting to go into insert mode.
-  -- This plugin broke Neovim when attempting to use alone. 
+  -- This plugin broke Neovim when attempting to use alone.
   -- Once the other hrsh7th plugins are used, the issue goes away.
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-buffer'
@@ -75,6 +75,11 @@ return require('packer').startup(function(use)
 
   use 'lewis6991/gitsigns.nvim'
 
+  use {
+    "windwp/nvim-autopairs",
+    config = function() require("nvim-autopairs").setup {} end
+  }
+  
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
