@@ -1,5 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleacer = ' '
+
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 
 -- Upon Ctrl+V, move selection up and down.
@@ -18,11 +19,12 @@ vim.keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
 
 -- Set terminal to normal mode. 
 -- Do this prior to attempting to split terminal.
-vim.keymap.set('t', '<C-e>', '<C-\\><C-n>')
---
+--vim.keymap.set('t', '<C-e>', '<C-\\><C-n>')
+vim.keymap.set('t', '<leader>e', '<C-\\><C-n>')
+
 ---- Splt Terminal horizontally 
 vim.keymap.set('n', 'sth', ':split<Return><C-w>w :terminal <CR>')
---
+
 ---- Split Terminal vertically 
 vim.keymap.set('n', 'stv', ':vsplit<Return><C-w>w :terminal <CR>')
 --
