@@ -8,7 +8,7 @@ local ensure_packer = function()
   end
   return false
 end
--- test b
+-- test dog
 local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
