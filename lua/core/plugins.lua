@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
   use 'nvim-lualine/lualine.nvim'
 
   use 'nvim-treesitter/nvim-treesitter'
+  use 'nvim-treesitter/playground'
 
   use {
     'nvim-telescope/telescope.nvim',
