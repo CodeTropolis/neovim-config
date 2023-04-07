@@ -1,4 +1,7 @@
 
+
+
+
 require "nvim-treesitter.configs".setup {
   query_linter = {
     enable = true,
