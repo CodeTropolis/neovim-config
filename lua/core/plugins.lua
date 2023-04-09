@@ -93,6 +93,10 @@ return require('packer').startup(function(use)
 --    }
 --  end
 --}
+--
+use {'akinsho/git-conflict.nvim', tag = "*", config = function()
+  require('git-conflict').setup()
+end}
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

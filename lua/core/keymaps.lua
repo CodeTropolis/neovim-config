@@ -23,6 +23,7 @@ vim.keymap.set('t', '<C-e>', '<C-\\><C-n>')
 -- The below keymap caused terminal to be sluggish when typing commands.
 --vim.keymap.set('t', '<leader>e', '<C-\\><C-n>')
 
+
 ---- Splt Terminal horizontally 
 vim.keymap.set('n', 'sth', ':split<Return><C-w>w :terminal <CR>')
 
@@ -46,5 +47,8 @@ vim.keymap.set('n', '<leader>u', '<C-w><up>')
 
 -- Move cursor to split below.
 vim.keymap.set('n', '<leader>b', '<C-w><down>')
+
+--Custom plugin mappings
+vim.keymap.set('n', '<leader>vx', ':lua require"treesitter-unit".select()<CR>')
 
 
