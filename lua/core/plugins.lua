@@ -82,6 +82,7 @@ return require('packer').startup(function(use)
     config = function() require("nvim-autopairs").setup {} end
   }
 
+  -- Confilct test
 use {'akinsho/git-conflict.nvim', tag = "*", config = function()
   require('git-conflict').setup()
 end}
