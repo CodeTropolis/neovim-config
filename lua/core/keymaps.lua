@@ -52,3 +52,4 @@ vim.keymap.set('n', '<leader>b', '<C-w><down>')
 vim.keymap.set('n', '<leader>vx', ':lua require"treesitter-unit".select()<CR>')
 
 
+--vim.api.nvim_create_autocmd({ "VimEnter" }, { command = [[<c-`>]]})
