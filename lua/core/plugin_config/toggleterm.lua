@@ -6,11 +6,13 @@ end
 
 
 toggleterm.setup({
-  open_mapping = [[<c-`>]],
+  open_mapping = [[<C-`>]],
   size = 10,
   start_in_insert = false,
+  shading_factor = 1,
 })
 
-
-
-
+-- Open Terminal upon launching Neovim.
+vim.api.nvim_exec([[
+  autocmd VimEnter * call timer_start(100, {-> execute('ToggleTerm')})
+]], false)
