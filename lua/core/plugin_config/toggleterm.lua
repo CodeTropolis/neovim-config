@@ -14,5 +14,5 @@ toggleterm.setup({
 
 -- Open Terminal upon launching Neovim.
 vim.api.nvim_exec([[
-  autocmd VimEnter * call timer_start(100, {-> execute('ToggleTerm')})
+  autocmd VimEnter * call timer_start(50, {-> execute('ToggleTerm')})
 ]], false)

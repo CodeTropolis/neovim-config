@@ -40,3 +40,5 @@ vim.keymap.set('n', '<leader>u', '<C-w><up>')
 -- Move cursor to split below.
 vim.keymap.set('n', '<leader>b', '<C-w><down>')
 
+vim.keymap.set('n', '<leader>t', ':TSPlaygroundToggle <CR>')
+
