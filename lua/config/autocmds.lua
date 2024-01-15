@@ -5,14 +5,14 @@
 -- Open Terminal upon launching Neovim.
 vim.api.nvim_exec(
   [[
-  autocmd VimEnter * call timer_start(50, {-> execute('ToggleTerm')})
+  autocmd VimEnter * call timer_start(100, {-> execute('ToggleTerm')})
 ]],
   false
 )
 
-vim.api.nvim_exec(
-  [[
-  autocmd VimEnter * call timer_start(100, {-> execute(':vsplit | term')})
-]],
-  false
-)
+--vim.api.nvim_exec(
+--  [[
+--  autocmd VimEnter * call timer_start(100, {-> execute(':vsplit | term')})
+--]],
+--  false
+--)
