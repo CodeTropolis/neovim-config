@@ -24,7 +24,7 @@ vim.keymap.set("n", "<leader>b", "<C-w><down>")
 
 -- Set terminal to normal mode.
 -- Do this prior to attempting to split terminal.
---vim.keymap.set("t", "<C-e>", "<C-\\><C-n>")
+--vim.keymap.set("t", "<leader>n", "<C-\\><C-n>")
 
 ---- Splt Terminal horizontally
 --vim.keymap.set("n", "sth", ":split<Return><C-w>w :terminal<CR>")
